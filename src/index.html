@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../dist/globals.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
 </head>
 <body>
-    <nav class="flex justify-between items-center py-2 px-2 sm:px-10 md:px-20 lg:px-40">
+    <nav class="flex justify-between items-center py-2 sm:px-10 md:px-20 lg:px-40">
         <img src="../img/Logo.png" alt="logo" class="w-24 h-24">
         <div class="flex gap-4 items-center">
             <a class="text-sm" href="#">INICIO</a>
@@ -17,6 +18,27 @@
             <a class="text-sm" href="#">CONTACTO</a>
         </div>
     </nav>
+    <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/slider.png" class="d-block w-100" alt="slider image">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slider.png" class="d-block w-100" alt="slider image">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slider.png" class="d-block w-100" alt="slider image">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <section class="mx-auto w-[95%] md:w-[750px]">
         <h2 class="text-2xl font-semibold mb-4">Productos Destacados</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:6 lg:8">
@@ -72,5 +94,6 @@
             <p>4503-6015</p>
         </div>
     </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
 </body>	
 </html>
